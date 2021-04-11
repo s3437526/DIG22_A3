@@ -19,7 +19,7 @@ const navSlide = () => {
             nav.classList.toggle('nav-active');
             burger.classList.toggle('toggle');
             animateLinks(navLinks);
-
+            console.log("clicked")
         }
     })
 }

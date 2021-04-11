@@ -35,9 +35,9 @@ body {
     // dummy data for testing
     position: relative;
     background-color: burlywood;
-    z-index: -1;
+    z-index: 1;
     top: 10vh;
-    margin: 0 1%;
+    // margin: 0 1%;
     height: 10200px;
 }
 
@@ -71,6 +71,7 @@ nav {
     // min-height: 8vh; // Ed's suggestion
     height: 10vh;
     font-size: 1.5rem;
+    z-index: 100;
 }
 
 .nav-links {

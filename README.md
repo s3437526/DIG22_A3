@@ -7,6 +7,3 @@ Things to note about this version:
 - Selecting each respective sized device works as expected.
 
 - Animation does not work with menu sliding in and out of view after toggling hamburger. It just appears in and disappears out.
-
-To do:
-- Animate menu away when scrolling down and animate back when scrolling up

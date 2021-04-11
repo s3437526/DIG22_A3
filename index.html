@@ -1,53 +1,73 @@
 <!-- HTML 5 deslaration using the English language -->
 <!DOCTYPE html>
 <html lang="en">
-
-<!-- Declarations for characters used in the document, viewport size 
+  <!-- Declarations for characters used in the document, viewport size 
     and links to external sources -->
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="#">
-    <link rel="stylesheet" href="styles.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="#" />
+    <link rel="stylesheet" href="styles.css" />
     <title>Trigwell Architects</title>
-</head>
-<!-- Visible/displayable portion of the website -->
+  </head>
+  <!-- Visible/displayable portion of the website -->
 
-<body>
+  <body>
     <!-- Navigation menu for both expanded and collapsed menus -->
     <nav>
-        <div class="collapsed-logo">
-            <!--  -->
-            <a href="#"><img class="logo" src="./images/trigwell-logo-cropped.jpg" alt="Trigwell Architects" class="logo"></a>
-        </div>
-        <ul class="nav-links">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About Us</a></li>
-            <li class="expanded-logo">
-                <!--  -->
-                <a href="#"><img class="logo" src="./images/trigwell-logo-cropped.jpg" alt="Trigwell Architects" class="logo"></a>
-            </li>
-            <li><a href="#">Gallery</a></li>
-            <li><a href="#">Contact Us</a></li>
-        </ul>
-        <!-- Burger (collapsed) menu -->
-        <div class="burger">
-            <div class="line1"></div>
-            <div class="line2"></div>
-            <div class="line3"></div>
-        </div>
+      <div class="collapsed-logo">
+        <!--  -->
+        <a href="#"
+          ><img
+            class="logo"
+            src="./images/trigwell-logo-cropped.jpg"
+            alt="Trigwell Architects"
+            class="logo"
+        /></a>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About Us</a></li>
+        <li class="expanded-logo">
+          <!--  -->
+          <a href="#"
+            ><img
+              class="logo"
+              src="./images/trigwell-logo-cropped.jpg"
+              alt="Trigwell Architects"
+              class="logo"
+          /></a>
+        </li>
+        <li><a href="#">Gallery</a></li>
+        <li><a href="#">Contact Us</a></li>
+      </ul>
+      <!-- Burger (collapsed) menu -->
+      <div class="burger">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div>
     </nav>
     <div class="body">
-        <div class="hero">
-            <picture class="hero-images">
-                <source srcset="/images/hero_large.png 1366w" media="(min-width: 768px)" class="hero-image-lrg">
-                <source srcset="/images/hero_mobile.png" media="(min-width: 360px)" class="hero-image-sml">
-                <!-- <img src="/images/hero_large.png" alt="House image" /> -->
-            </picture>
-        </div>
+      <div class="hero">
+        <picture class="hero-images">
+          <source
+            srcset="/images/hero_mobile.png"
+            media="(max-width: 768px)"
+            class="hero-image-lrg"
+          />
+          <source
+          srcset="/images/hero_large.png"
+          media="(min-width: 769px)"
+          class="hero-image-lrg"
+        />
+        <img src="/images/hero_default.png" alt="House image" />
+          <!-- <source srcset="/images/hero_mobile.png" media="(min-width: 360px)" class="hero-image-sml"> -->
+          <!--  -->
+        </picture>
+      </div>
     </div>
     <script src="main.js"></script>
-</body>
-
+  </body>
 </html>

@@ -212,8 +212,11 @@ ul li {
 }
 
 .hero-image-lrg {
-    max-width: 100%;
+    max-width: 100vw;
     height: auto;
 }
 
-.hero-image-sml {}
+.hero-image-sml {
+    max-width: 100vw;
+    height: auto;
+}

@@ -29,12 +29,13 @@
 body {
     font-family: "Dubai", sans-serif;
     color: black;
+    max-width: 1366px;
 }
 
 .body {
     // dummy data for testing
     position: relative;
-    background-color: burlywood;
+    // background-color: burlywood;
     z-index: 1;
     top: 10vh;
     // margin: 0 1%;
@@ -60,6 +61,7 @@ body {
 /* Expanded header nav styling */
 
 nav {
+    background-color: white;
     position: fixed; //
     top: 0; //
     transition: top 0.5s; //
@@ -133,11 +135,12 @@ ul li {
         overflow-x: hidden;
     }
     .nav-links {
+        background-color: white;
         position: absolute;
         left: 100%;
         height: 90vh;
         top: 10vh;
-        background-color: cadetblue;
+        // background-color: cadetblue;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -198,3 +201,19 @@ ul li {
 .toggle .line3 {
     transform: rotate(45deg) translate(-5px, -6px);
 }
+
+.hero {
+    width: 100%;
+}
+
+.hero-images {
+    width: 100%;
+    max-height: 90vh;
+}
+
+.hero-image-lrg {
+    max-width: 100%;
+    height: auto;
+}
+
+.hero-image-sml {}

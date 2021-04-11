@@ -18,12 +18,14 @@
     <!-- Navigation menu for both expanded and collapsed menus -->
     <nav>
         <div class="collapsed-logo">
+            <!--  -->
             <a href="#"><img class="logo" src="./images/trigwell-logo-cropped.jpg" alt="Trigwell Architects" class="logo"></a>
         </div>
         <ul class="nav-links">
             <li><a href="#">Home</a></li>
             <li><a href="#">About Us</a></li>
             <li class="expanded-logo">
+                <!--  -->
                 <a href="#"><img class="logo" src="./images/trigwell-logo-cropped.jpg" alt="Trigwell Architects" class="logo"></a>
             </li>
             <li><a href="#">Gallery</a></li>
@@ -37,7 +39,13 @@
         </div>
     </nav>
     <div class="body">
-        <div>asdf</div>
+        <div class="hero">
+            <picture class="hero-images">
+                <source srcset="/images/hero_large.png 1366w" media="(min-width: 768px)" class="hero-image-lrg">
+                <source srcset="/images/hero_mobile.png" media="(min-width: 360px)" class="hero-image-sml">
+                <!-- <img src="/images/hero_large.png" alt="House image" /> -->
+            </picture>
+        </div>
     </div>
     <script src="main.js"></script>
 </body>

@@ -13,6 +13,7 @@ const navSlide = () => {
 
     });
 
+    // Set body to listen to click events to cancel menu
     body = document.querySelector('.body');
     body.addEventListener('click', () => {
         if (nav.classList.contains('nav-active')) {

@@ -32,13 +32,19 @@ body {
   position: relative;
   z-index: 1;
   top: 10vh;
-  height: 10200px;
 }
 
 /* Expanded header logo styling */
 .logo {
   height: 10vh;
   width: auto;
+}
+
+p,
+h1,
+h2,
+h3 {
+  margin: 10px;
 }
 
 .collapsed-logo {
@@ -114,11 +120,6 @@ ul li {
           justify-content: center;
   width: 100%;
   height: 100%;
-}
-
-/* Section headings styling */
-.sectionHeading {
-  font-family: "Day Roman", serif;
 }
 
 .burger {
@@ -243,22 +244,65 @@ ul li {
 
 .hero-images {
   width: 100%;
-  max-height: 90vh;
 }
 
 .hero-image-lrg {
-  max-width: 100vw;
+  max-width: 50%;
   height: auto;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .hero-image-sml {
-  max-width: 100vw;
+  max-width: 100%;
+  height: auto;
+}
+
+.default-hero-img {
+  max-width: 100%;
+}
+
+/* Section headings styling */
+.sectionHeading {
+  font-family: "Day Roman", serif;
+  margin: 10px;
+}
+
+.about {
+  position: relative;
+}
+
+.sectionContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 10px;
+}
+
+.leftSection {
+  width: 50%;
+}
+
+.rightSection {
+  padding: 10px;
+  width: 50%;
+}
+
+.flexImage {
+  max-width: 100%;
   height: auto;
 }
 
 .parallax {
+  position: relative;
   height: 100vh;
-  width: 100vw;
+  width: 100%;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;

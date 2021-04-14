@@ -250,6 +250,11 @@ ul li {
   width: 50%;
 }
 
+.leftSection div,
+.rightSection div {
+  width: 100%;
+}
+
 .rightSection {
   padding: 10px;
   width: 50%;
@@ -305,6 +310,7 @@ ul li {
 .labels {
   position: relative;
   left: 10%;
+  width: 60%;
 }
 
 .section-group {
@@ -317,17 +323,20 @@ ul li {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  /* width: 80%;*/
 }
 
 input,
 select {
   height: 30px;
   width: 80%;
+  margin-bottom: 5%;
 }
 
 #message {
   width: 80%;
-  height: 80%;
+  height: 20vh;
+  margin-bottom: 1%;
 }
 
 #submit {
@@ -336,7 +345,7 @@ select {
   width: 80%;
 }
 
-.footer-logo {
+.footer-logo-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -346,11 +355,14 @@ select {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 5%;
+  padding: 0 0 3% 0;
+}
+
+.footer-logo {
+  max-width: 40%;
 }
 
 .footer {
-  padding: 20px;
   font-size: small;
   background-color: white;
 }
@@ -365,12 +377,12 @@ select {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding: 20px;
 }
 
 .student-disclaimer {
-  width: 50%;
+  width: 60%;
   font-style: italic;
-  padding-bottom: 20px;
   text-align: center;
 }
 
@@ -381,18 +393,46 @@ select {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .social-media {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 10%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 15%;
+  margin-left: 2%;
+}
+
+.social-link {
+  margin: 50%;
+}
+
+.copyright {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-width: 20%;
+  margin-right: 2%;
 }
 
 /* Tablet size styling */
 @media screen and (max-width: 1024px) {
-  body {
+  .wrapper {
     overflow-x: hidden;
   }
   .nav-links {
@@ -448,10 +488,10 @@ select {
   }
 }
 
-@media screen and (max-width: 768) {
-  .logo {
-    max-width: 100%;
-    height: auto;
-  }
+@media screen and (max-width: 768px) {
+  /* .logo {
+    //     max-width: 10vh;
+    //     height: auto;
+    // }*/
 }
 /*# sourceMappingURL=styles.css.map */

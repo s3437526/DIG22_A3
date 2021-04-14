@@ -1,219 +1,172 @@
 <!-- HTML 5 deslaration using the English language -->
 <!DOCTYPE html>
 <html lang="en">
-  <!-- Declarations for characters used in the document, viewport size 
+<!-- Declarations for characters used in the document, viewport size 
     and links to external sources -->
 
-  <head>
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="#" />
     <link rel="stylesheet" href="styles.css" />
     <title>Trigwell Architects</title>
-  </head>
-  <!-- Visible/displayable portion of the website -->
+</head>
+<!-- Visible/displayable portion of the website -->
 
-  <body>
-    <div class="wrapper">
-      <!-- Navigation menu for both expanded and collapsed menus -->
-      <nav>
+<body>
+
+    <!-- Navigation menu for both expanded and collapsed menus -->
+    <nav>
         <div class="collapsed-logo">
-          <!--  -->
-          <a href="#"
-            ><img
-              class="logo"
-              src="./images/trigwell-logo-cropped.jpg"
-              alt="Trigwell Architects"
-              class="logo"
-          /></a>
+            <!--  -->
+            <a href="#"><img class="logo" src="./images/trigwell-logo-cropped.jpg" alt="Trigwell Architects" /></a>
         </div>
         <ul class="nav-links">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About Us</a></li>
-          <li class="expanded-logo">
-            <!--  -->
-            <a href="#"
-              ><img
-                class="logo"
-                src="./images/trigwell-logo-cropped.jpg"
-                alt="Trigwell Architects"
-                class="logo"
-            /></a>
-          </li>
-          <li><a href="#">Gallery</a></li>
-          <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li class="expanded-logo">
+                <!--  -->
+                <a href="#"><img class="logo" src="./images/trigwell-logo-cropped.jpg" alt="Trigwell Architects" /></a>
+            </li>
+            <li><a href="#">Gallery</a></li>
+            <li><a href="#">Contact Us</a></li>
         </ul>
 
         <!-- Burger (collapsed) menu -->
         <div class="burger">
-          <div class="line1"></div>
-          <div class="line2"></div>
-          <div class="line3"></div>
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
         </div>
-      </nav>
-      <div class="content-body">
-        <div class="hero">
-          <picture class="hero-images">
-            <!--  -->
-            <source
-              srcset="/images/hero_mobile.png"
-              media="(max-width: 768px)"
-              class="hero-image-sml"
-            />
-            <!--  -->
-            <source
-              srcset="/images/hero_large.png"
-              media="(min-width: 769px)"
-              class="hero-image-lrg"
-            />
-            <!--  -->
-            <img
-              src="/images/hero_default.png"
-              alt="House image"
-              class="default-hero-img"
-            />
-          </picture>
-        </div>
-
-        <!-- Parallax 1 section -->
-        <div class="parallax" id="parallax1"></div>
-
-        <!-- About Us section -->
-        <div class="about">
-          <div class="sectionHeading">
-            <h1>About Us</h1>
-          </div>
-          <div class="sectionContainer">
-            <div class="leftSection">
-              <p>Meet Harrison and Jeff Trigwell.</p>
-
-              <p>
-                The Brothers and business partners are both qualified and
-                experienced architects, with the firm having worked on a number
-                of major projects in the Fremantle area and surrounding suburbs.
-                They have been operating for over 15 years as Trigwell
-                architects and pride themselves in the level of quality product
-                they have produced.
-              </p>
-
-              <p>
-                Their portfolio includes both residential and commercial
-                projects. Most recently they designed the head office building
-                for international shipping company Brighton & Swift Co.
-              </p>
-
-              <p>
-                Trigwell architects specialise in high-end commercial and
-                residential design.
-              </p>
+    </nav>
+    <div class="wrapper">
+        <div class="content-body">
+            <div class="hero">
+                <picture class="hero-images">
+                    <!--  -->
+                    <source srcset="/images/hero_mobile.png" media="(max-width: 768px)" class="hero-image-sml" />
+                    <!--  -->
+                    <source srcset="/images/hero_large.png" media="(min-width: 769px)" class="hero-image-lrg" />
+                    <!--  -->
+                    <img src="/images/hero_default.png" alt="House image" class="default-hero-img" />
+                </picture>
             </div>
-            <div class="rightSection">
-              <img
-                src="/images/trigwell-brothers.png"
-                alt="Harrison and Jeff Trigwell"
-                class="flexImage"
-              />
-            </div>
-          </div>
-        </div>
-        <!-- Parallax 2 section -->
-        <div class="parallax" id="parallax2"></div>
 
-        <!-- Gallery section -->
+            <!-- Parallax 1 section -->
+            <div class="parallax" id="parallax1"></div>
 
-        <!-- Parallax 3 section -->
-        <div class="parallax" id="parallax3"></div>
-
-        <!-- Contact Us section -->
-        <div class="contact">
-          <div class="sectionHeading">
-            <h1>Contact Us</h1>
-          </div>
-          <div class="sectionContainer">
-            <div class="leftSection">
-              <div class="section-group flex-centered">
-                <div class="labels">
-                  <label for="name">Name:</label>
+            <!-- About Us section -->
+            <div class="about">
+                <div class="sectionHeading">
+                    <h1>About Us</h1>
                 </div>
-                </div>  
-                <input type="text" id="name" name="name" />
-                
-                <div class="labels">
-                <label for="email"></label>
-                Email:<br /><input type="email" id="email" name="email" /><br />
-                <label for="selection"></label>
-                Subject:<br />
-                <select name="selection" id="selection">
+                <div class="sectionContainer">
+                    <div class="leftSection">
+                        <p>Meet Harrison and Jeff Trigwell.</p>
+
+                        <p>
+                            The Brothers and business partners are both qualified and experienced architects, with the firm having worked on a number of major projects in the Fremantle area and surrounding suburbs. They have been operating for over 15 years as Trigwell architects
+                            and pride themselves in the level of quality product they have produced.
+                        </p>
+
+                        <p>
+                            Their portfolio includes both residential and commercial projects. Most recently they designed the head office building for international shipping company Brighton & Swift Co.
+                        </p>
+
+                        <p>
+                            Trigwell architects specialise in high-end commercial and residential design.
+                        </p>
+                    </div>
+                    <div class="rightSection">
+                        <img src="/images/trigwell-brothers.png" alt="Harrison and Jeff Trigwell" class="flexImage" />
+                    </div>
+                </div>
+            </div>
+            <!-- Parallax 2 section -->
+            <div class="parallax" id="parallax2"></div>
+
+            <!-- Gallery section -->
+
+            <!-- Parallax 3 section -->
+            <div class="parallax" id="parallax3"></div>
+
+            <!-- Contact Us section -->
+            <div class="contact">
+                <div class="sectionHeading">
+                    <h1>Contact Us</h1>
+                </div>
+                <div class="sectionContainer">
+                    <div class="leftSection flex-centered">
+                        <div>
+                            <div class="labels">
+                                <label for="name">Name:</label>
+                            </div>
+                            <div class="section-group flex-centered">
+                                <input type="text" id="name" name="name" />
+                            </div>
+                            <div class="labels">
+                                <label for="email">Email:</label>
+                            </div>
+                            <div class="section-group flex-centered">
+                                <input type="email" id="email" name="email" />
+                            </div>
+                            <div class="labels">
+                                <label for="selection">Subject:</label>
+                            </div>
+                            <div class="section-group flex-centered">
+                                <select name="selection" id="selection">
                   <option value="sales">Sales</option>
                   <option value="general">General Enquiries</option>
                   <option value="partners">Partners</option>
                   <option value="feedback">Feedback</option>
                 </select>
-              </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="rightSection flex-centered">
+                        <div>
+                            <div class="labels">
+                                <label for="message">Message:</label>
+                            </div>
+                            <div class="section-group flex-centered">
+                                <textarea id="message" name="comment"></textarea>
+                            </div>
+                            <div class="section-group flex-centered">
+                                <input type="submit" id="submit" name="submit" value="Submit Message" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-logo-container">
+                    <img class="footer-logo" src="./images/trigwell-logo-cropped.jpg" alt="Trigwell Architects" />
+                </div>
             </div>
-            <div class="rightSection">
-              <div class="labels">
-                <label for="message">Message:</label>
-              </div>
-              <div class="section-group flex-centered">
-                <textarea id="message" name="comment" form="usrform"></textarea>
-              </div>
-              <div class="section-group flex-centered">
-                <input
-                  type="submit"
-                  id="submit"
-                  name="submit"
-                  value="Submit Message"
-                />
-              </div>
-            </div>
-          </div>
-          <div class="footer-logo">
-            <img
-              class="logo"
-              src="./images/trigwell-logo-cropped.jpg"
-              alt="Trigwell Architects"
-              class="logo"
-            />
-          </div>
-        </div>
 
-        <!-- Parallax 4 section -->
-        <div class="parallax" id="parallax4"></div>
+            <!-- Parallax 4 section -->
+            <div class="parallax" id="parallax4"></div>
 
-        <!-- Footer -->
-        <div class="footer">
-          <div class="disclaimer-container">
-            <div class="student-disclaimer">
-              This website has been created as part of an assignment in an
-              approved course of study for Curtin University and contains
-              copyright material not created by the author. All copyright
-              material used remains copyright of the respective owners and has
-              been used here pursuant to Section 40 of the Copyright Act 1968
-              (Commonwealth of Australia). No part of this work may be
-              reproduced without consent of the original copyright owners. See
-              code comments for references.
+            <!-- Footer -->
+            <div class="footer">
+                <div class="disclaimer-container">
+                    <div class="student-disclaimer">
+                        This website has been created as part of an assignment in an approved course of study for Curtin University and contains copyright material not created by the author. All copyright material used remains copyright of the respective owners and has been
+                        used here pursuant to Section 40 of the Copyright Act 1968 (Commonwealth of Australia). No part of this work may be reproduced without consent of the original copyright owners. See code comments for references.
+                    </div>
+                </div>
+                <div class="social-footer">
+                    <div class="social-media">
+                        <a href="#"><img class="social-link" src="./images/instagram.svg" alt="Instagram" /></a>
+                        <a href="#"><img class="social-link" src="./images/facebook.svg" alt="Facebook" /></a>
+                        <a href="#"><img class="social-link" src="./images/twitter.svg" alt="Twitter" /></a>
+                    </div>
+                    <div class="copyright">
+                        &copy; Copyright Trigwell Architects 2021
+                    </div>
+                </div>
             </div>
-          </div>
-          <div class="social-footer">
-            <div class="social-media">
-              <a href="#" class="instagram"
-                ><img src="./images/instagram.svg" alt="Instagram"
-              /></a>
-              <a href="#" class="facebook"
-                ><img src="./images/facebook.svg" alt="Facebook"
-              /></a>
-              <a href="#" class="twitter"
-                ><img src="./images/twitter.svg" alt="Twitter"
-              /></a>
-            </div>
-            <div class="copyright">
-              &copy; Copyright Trigwell Architects 2021
-            </div>
-          </div>
         </div>
-      </div>
     </div>
     <script src="main.js"></script>
-  </body>
+</body>
+
 </html>

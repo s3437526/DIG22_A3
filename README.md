@@ -10,3 +10,12 @@ Things to note about this version:
 
 Fix desktop layout
  - Hero not fitting in full height
+
+"About Us" section did not need "More Information" button as it seems to fit nicely across a variety of viewport sizes. Therefore it is not practical to implement it.
+
+Readjust mobile layout
+- Centering section headings
+- Check/correct text/image areas
+- Check/correct image sizings
+- Make menu disappear when clicking on a link
+- Mobile/tablet scrolling tends to stick

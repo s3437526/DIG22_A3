@@ -42,7 +42,7 @@ body {
           justify-content: center;
 }
 
-.body {
+.content-body {
   position: relative;
   z-index: 1;
   top: 10vh;
@@ -286,6 +286,111 @@ ul li {
   background-image: url("/images/parallax-4.png");
 }
 
+.contact {
+  background-color: white;
+}
+
+.flex-centered {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.labels {
+  position: relative;
+  left: 10%;
+}
+
+.section-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+input,
+select {
+  height: 30px;
+  width: 80%;
+}
+
+#message {
+  width: 80%;
+  height: 80%;
+}
+
+#submit {
+  background-color: #306bac;
+  color: white;
+  width: 80%;
+}
+
+.footer-logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 5%;
+}
+
+.footer {
+  padding: 20px;
+  font-size: small;
+  background-color: white;
+}
+
+.disclaimer-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.student-disclaimer {
+  width: 50%;
+  font-style: italic;
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+.social-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.social-media {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 10%;
+}
+
+/* Tablet size styling */
 @media screen and (max-width: 1024px) {
   body {
     overflow-x: hidden;

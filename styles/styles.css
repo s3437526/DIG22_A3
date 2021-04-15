@@ -3,14 +3,14 @@
   font-family: "Day Roman";
   font-style: normal;
   font-weight: normal;
-  src: local("Day Roman"), url("./fonts/DAYROM__.woff") format("woff");
+  src: local("Day Roman"), url("../fonts/DAYROM__.woff") format("woff");
 }
 
 @font-face {
   font-family: "Day Roman - Expert";
   font-style: normal;
   font-weight: normal;
-  src: local("Day Roman - Expert"), url("./fonts/DAYROM_X.woff") format("woff");
+  src: local("Day Roman - Expert"), url("../fonts/DAYROM_X.woff") format("woff");
 }
 
 /* Setting up page defaults to eliminate unexpected formatting behaviour */
@@ -48,6 +48,7 @@ body {
   top: 10vh;
   max-width: 1366px;
   font-size: 1.5rem;
+  overflow-x: hidden;
 }
 
 /* Expanded header logo styling */
@@ -289,17 +290,6 @@ ul li {
           align-items: center;
 }
 
-.glide__arrows {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  background-color: orange;
-  height: 100px;
-  width: 100vw;
-}
-
 .landscape {
   max-width: 100vw;
 }
@@ -465,9 +455,6 @@ select {
 
 /* Tablet size styling */
 @media screen and (max-width: 1024px) {
-  .wrapper {
-    overflow-x: hidden;
-  }
   .nav-links {
     background-color: white;
     position: absolute;

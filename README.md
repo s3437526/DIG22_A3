@@ -19,3 +19,4 @@ Readjust mobile layout
 - Check/correct image sizings
 - Make menu disappear when clicking on a link
 - Mobile/tablet scrolling tends to stick
+- Carousel width makes entire page overflow

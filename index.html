@@ -1,6 +1,7 @@
-<!-- HTML 5 deslaration using the English language -->
+<!-- HTML 5 declaration using the English language -->
 <!DOCTYPE html>
 <html lang="en">
+
 <!-- Declarations for characters used in the document, viewport size 
     and links to external sources -->
 
@@ -19,15 +20,19 @@
 
     <!-- Navigation menu for both expanded and collapsed menus -->
     <nav>
+        <!-- Collapsed menu logo -->
         <div class="collapsed-logo">
-            <!--  -->
+            <!-- Image sourced from Curtin University supplied client brief
+            Perryer, Harriet. 2019. “Trigwell Architects”. Curtin University. “Logo”. Accessed on Mar 16, 2021 -->
             <a href="#"><img class="logo" src="./images/trigwell-logo-cropped.jpg" alt="Trigwell Architects" /></a>
         </div>
+        <!-- Navigation menu links for both expanded and collapsed versions, linking to their respective sections -->
         <ul class="nav-links">
             <li><a href="#">Home</a></li>
             <li><a href="#about">About Us</a></li>
             <li class="expanded-logo">
-                <!--  -->
+                <!-- Image sourced from Curtin University supplied client brief
+            Perryer, Harriet. 2019. “Trigwell Architects”. Curtin University. “Logo”. Accessed on Mar 16, 2021 -->
                 <a href="#"><img class="logo" src="./images/trigwell-logo-cropped.jpg" alt="Trigwell Architects" /></a>
             </li>
             <li><a href="#gallery">Gallery</a></li>
@@ -41,20 +46,26 @@
             <div class="line3"></div>
         </div>
     </nav>
+    <!-- Page content wrappers to host the page and limit the body size for larger desktop viewports -->
     <div class="wrapper">
         <div class="content-body">
+            <!-- Hero section -->
             <div class="hero">
+                <!-- HTML5 picture element which determines viewport size and assigns a relevant image based on it -->
                 <picture class="hero-images">
-                    <!--  -->
+                    <!-- Devonport, John, Hoyle, Micky. 2010. “Cove 3 / SAOTA”. Website”. Accessed April 07, 2021. https://www.archdaily.com/565150/cove-3-saota -->
                     <source srcset="/images/hero_mobile.png" media="(max-width: 768px)" class="hero-image-sml" />
-                    <!--  -->
+
+                    <!-- Unknown. n.d. Unspecified. Website. Accessed on April 04, 2021. https://www.pinterest.ie/pin/186617978292313825/ -->
                     <source srcset="/images/hero_large.png" media="(min-width: 769px)" class="hero-image-lrg" />
-                    <!--  -->
+
+                    <!-- Unknown. n.d. Unspecified. Website. Accessed on April 04, 2021. https://www.pinterest.ie/pin/186617978292313825/ -->
                     <img src="/images/hero_default.png" alt="House image" class="default-hero-img" />
                 </picture>
             </div>
 
             <!-- Parallax 1 section -->
+            <!-- Image sourced from Hassell. n.d. “Baker McKenzie Workplace”. Screenshot. Accessed on April 04, 2021. https://www.hassellstudio.com/project/baker-mckenzie -->
             <div class="parallax" id="parallax1"></div>
 
             <!-- About Us section -->
@@ -62,6 +73,8 @@
                 <div class="sectionHeading">
                     <h1>About Us</h1>
                 </div>
+                <!-- Text and photo introduction section of the Trigwell brothers 
+                    Side by side on desktop views and top/bottom on smaller devices -->
                 <div class="sectionContainer">
                     <div class="leftSection">
                         <p>Harrison and Jeff Trigwell are brothers and business partners. They are both qualified and experienced architects, with the firm having worked on a number of major projects in the Fremantle area and surrounding suburbs. They have
@@ -73,58 +86,62 @@
                         </p>
                     </div>
                     <div class="rightSection">
+                        <!-- Image from Bosshardt, Rick. 2018. “A tale of two men”. Website. Accessed on Apr 06, 2021. https://www.lakehealthyliving.com/a-tale-of-two-men/ -->
                         <img src="/images/trigwell-brothers.png" alt="Harrison and Jeff Trigwell" class="flexImage" />
                     </div>
                 </div>
             </div>
             <!-- Parallax 2 section -->
+            <!-- Image sourced from Bowery Design Group. 2020. “Somera Road Modern Home Design Concept by Bowery Design Group” Website. Accessed on Apr 06, 2021. https://luxury-houses.net/somera-road-modern-home-design-concept-by-bowery-design-group/ -->
             <div class="parallax" id="parallax2"></div>
 
-            <!-- Gallery section -->
+            <!-- Gallery/carousel section -->
             <div class="gallery-container" id="gallery">
                 <div class="glide">
                     <div class="glide__track" data-glide-el="track">
                         <ul class="glide__slides">
+                            <!-- Similar to the hero image section, this is a HTML5 image collection that will display according to the currently
+                                    active viewport size. This one, however, has a selection of three portrait (mobile) and three landscape (desktop) photos -->
                             <li class="glide__slide">
                                 <picture class="gallery-images">
-                                    <!--  -->
+                                    <!-- Image sourced from Covet House. n.d. “Top Projects by Studia 54”. Website. Accessed on April 04, 2021. https://www.pinterest.ie/pin/784259722602689412/ -->
                                     <source srcset="/images/gallery-img-1-portrait.png" media="(max-width: 768px)" class="gallery-image-sml" />
-                                    <!--  -->
+                                    <!-- Image sourced from Luxury Houses. 2020. “Star Island Contemporary Home Concept on the Prestigious Star Island, FL by SAOTA”. Website. Accessed on Apr 06, 2021. https://luxury-houses.net/star-island-contemporary-home-concept-on-the-prestigious-star-island-fl-by-saota/ -->
                                     <source srcset="/images/gallery-img-1-landscape.png" media="(min-width: 769px)" class="gallery-image-lrg" />
-                                    <!--  -->
+                                    <!-- Image sourced from Luxury Houses. 2020. “Star Island Contemporary Home Concept on the Prestigious Star Island, FL by SAOTA”. Website. Accessed on Apr 06, 2021. https://luxury-houses.net/star-island-contemporary-home-concept-on-the-prestigious-star-island-fl-by-saota/ -->
                                     <img src="/images/hero_default.png" alt="House image" class="default-gallery-img" />
                                 </picture>
                             </li>
                             <li class="glide__slide">
                                 <picture class="gallery-images">
-                                    <!-- https://www.google.com/imgres?imgurl=https%3A%2F%2Fi.pinimg.com%2Foriginals%2F4c%2F3d%2F24%2F4c3d247abc644e898284f8d8070fa969.jpg&imgrefurl=https%3A%2F%2Fwww.pinterest.com%2Fpin%2F613334042980792592%2F&tbnid=J24ZadWqe4eRKM&vet=12ahUKEwi1oaq5h4LwAhVSVisKHceRD14QMygHegUIARDCAQ..i&docid=tkQGCmIM7l09HM&w=636&h=990&q=pinterest%20modern%20house%20exterior&client=firefox-b-d&ved=2ahUKEwi1oaq5h4LwAhVSVisKHceRD14QMygHegUIARDCAQ -->
+                                    <!-- Image sourced from Lefty.script. n.d. "Portrait House 2" Accessed on Apr 16, 2021. https://www.google.com/imgres?imgurl=https%3A%2F%2Fi.pinimg.com%2Foriginals%2F4c%2F3d%2F24%2F4c3d247abc644e898284f8d8070fa969.jpg&imgrefurl=https%3A%2F%2Fwww.pinterest.com%2Fpin%2F613334042980792592%2F&tbnid=J24ZadWqe4eRKM&vet=12ahUKEwi1oaq5h4LwAhVSVisKHceRD14QMygHegUIARDCAQ..i&docid=tkQGCmIM7l09HM&w=636&h=990&q=pinterest%20modern%20house%20exterior&client=firefox-b-d&ved=2ahUKEwi1oaq5h4LwAhVSVisKHceRD14QMygHegUIARDCAQ -->
                                     <source srcset="/images/gallery-img-2-portrait.jpg" media="(max-width: 768px)" class="gallery-image-sml" />
-                                    <!-- Image from Expect Best 
-                                        https://www.pexels.com/photo/modern-building-against-sky-323780/ Accessed Apr 16, 2021 -->
+                                    <!-- Image sourced from Expect Best. n.d. "Landscapt House 2". Accessed Apr 16, 2021. https://www.pexels.com/photo/modern-building-against-sky-323780/ -->
                                     <source srcset="/images/gallery-img-2-landscape.png" media="(min-width: 769px)" class="gallery-image-lrg" />
-                                    <!--  -->
+                                    <!-- Image sourced from Expect Best. n.d. "Landscapt House 2". Accessed Apr 16, 2021. https://www.pexels.com/photo/modern-building-against-sky-323780/ -->
                                     <img src="/images/hero_default.png" alt="House image" class="default-gallery-img" />
                                 </picture>
                             </li>
                             <li class="glide__slide">
                                 <picture class="gallery-images">
-                                    <!-- https://www.google.com/imgres?imgurl=https%3A%2F%2Fi.pinimg.com%2Foriginals%2F4c%2F3d%2F24%2F4c3d247abc644e898284f8d8070fa969.jpg&imgrefurl=https%3A%2F%2Fwww.pinterest.com%2Fpin%2F613334042980792592%2F&tbnid=J24ZadWqe4eRKM&vet=12ahUKEwi1oaq5h4LwAhVSVisKHceRD14QMygHegUIARDCAQ..i&docid=tkQGCmIM7l09HM&w=636&h=990&q=pinterest%20modern%20house%20exterior&client=firefox-b-d&ved=2ahUKEwi1oaq5h4LwAhVSVisKHceRD14QMygHegUIARDCAQ -->
+                                    <!-- Image sourced from Butterfly. 2021. "21 The Most Unique Modern Home Design in the World [NEW]" Accessed on April 16, 2021. https://www.pinterest.com.au/pin/684899055813804157/ -->
                                     <source srcset="/images/gallery-img-3-portrait.jpg" media="(max-width: 768px)" class="gallery-image-sml" />
-                                    <!--  -->
+                                    <!-- Image sourced from Magdy, Ibrahem. n.d. "Modern Islamic House". Accessed on April 16, 2021. https://www.google.com/imgres?imgurl=http%3A%2F%2Fcdn.home-designing.com%2Fwp-content%2Fuploads%2F2017%2F05%2Fmodern-islamic-villa-home-exterior.jpg&imgrefurl=http%3A%2F%2Fwww.home-designing.com%2Fmodern-house-exterior-elevation-ideas-pictures-color-combinations&tbnid=dJXzcQFlCzGMsM&vet=10CCEQMyh4ahcKEwjgs_jDiYLwAhUAAAAAHQAAAAAQAg..i&docid=Yd2sMBeeNOTvlM&w=1200&h=900&q=pinterest%20modern%20house%20exterior&client=firefox-b-d&ved=0CCEQMyh4ahcKEwjgs_jDiYLwAhUAAAAAHQAAAAAQAg -->
                                     <source srcset="/images/gallery-img-3-landscape.jpg" media="(min-width: 769px)" class="gallery-image-lrg" />
-                                    <!-- https://www.google.com/imgres?imgurl=http%3A%2F%2Fcdn.home-designing.com%2Fwp-content%2Fuploads%2F2017%2F05%2Fmodern-islamic-villa-home-exterior.jpg&imgrefurl=http%3A%2F%2Fwww.home-designing.com%2Fmodern-house-exterior-elevation-ideas-pictures-color-combinations&tbnid=dJXzcQFlCzGMsM&vet=10CCEQMyh4ahcKEwjgs_jDiYLwAhUAAAAAHQAAAAAQAg..i&docid=Yd2sMBeeNOTvlM&w=1200&h=900&q=pinterest%20modern%20house%20exterior&client=firefox-b-d&ved=0CCEQMyh4ahcKEwjgs_jDiYLwAhUAAAAAHQAAAAAQAg -->
+                                    <!-- Image sourced from Magdy, Ibrahem. n.d. "Modern Islamic House". Accessed on April 16, 2021. https://www.google.com/imgres?imgurl=http%3A%2F%2Fcdn.home-designing.com%2Fwp-content%2Fuploads%2F2017%2F05%2Fmodern-islamic-villa-home-exterior.jpg&imgrefurl=http%3A%2F%2Fwww.home-designing.com%2Fmodern-house-exterior-elevation-ideas-pictures-color-combinations&tbnid=dJXzcQFlCzGMsM&vet=10CCEQMyh4ahcKEwjgs_jDiYLwAhUAAAAAHQAAAAAQAg..i&docid=Yd2sMBeeNOTvlM&w=1200&h=900&q=pinterest%20modern%20house%20exterior&client=firefox-b-d&ved=0CCEQMyh4ahcKEwjgs_jDiYLwAhUAAAAAHQAAAAAQAg -->
                                     <img src="/images/hero_default.png" alt="House image" class="default-gallery-img" />
                                 </picture>
                             </li>
                         </ul>
                     </div>
                     <div class="glide__arrows" data-glide-el="controls">
-                        <button class="glide__arrow glide__arrow--left" data-glide-dir="<"><</button>
-                        <button class="glide__arrow glide__arrow--right" data-glide-dir=">">></button>
+                        <button class="glide__arrow glide__arrow--left" data-glide-dir="<">&#10094;</button>
+                        <button class="glide__arrow glide__arrow--right" data-glide-dir=">">&#10095;</button>
                     </div>
                 </div>
             </div>
             <!-- Parallax 3 section -->
+            <!-- Image obtained from Hassell. n.d. “Transurban Headquarters”. Screenshot. Accessed Mar 16,  2021. https://www.hassellstudio.com/project/transurban-headquarters -->
             <div class="parallax" id="parallax3"></div>
 
             <!-- Contact Us section -->
@@ -133,6 +150,8 @@
                     <h1>Contact Us</h1>
                 </div>
                 <div class="sectionContainer">
+                    <!-- Section for inputting user information and submitting the form 
+                            Side by side on desktop views and top/bottom on smaller devices -->
                     <div class="leftSection flex-centered">
                         <div>
                             <div class="labels">
@@ -151,6 +170,7 @@
                                 <label for="selection">Subject:</label>
                             </div>
                             <div class="section-group flex-centered">
+                                <!-- Dropdown selection to choose enquiry type -->
                                 <select name="selection" id="selection">
                                     <option value="sales">Sales</option>
                                     <option value="general">General Enquiries</option>
@@ -160,6 +180,7 @@
                             </div>
                         </div>
                     </div>
+                    <!-- Message input and submission section -->
                     <div class="rightSection flex-centered">
                         <div>
                             <div class="labels">
@@ -175,14 +196,16 @@
                     </div>
                 </div>
                 <div class="footer-logo-container">
+                    <!-- Image sourced from Curtin University supplied client brief Perryer, Harriet. 2019. “Trigwell Architects”. Curtin University. “Logo”. Accessed on Mar 16, 2021 -->
                     <img class="footer-logo" src="./images/trigwell-logo-cropped.jpg" alt="Trigwell Architects" />
                 </div>
             </div>
 
             <!-- Parallax 4 section -->
+            <!-- Image obtained from Hassell. n.d. “Liv Apartments”. Screenshot. Accessed on April 04, 2021. https://www.hassellstudio.com/project/liv-apartments -->
             <div class="parallax" id="parallax4"></div>
 
-            <!-- Footer -->
+            <!-- Footer containing student disclaimer and general but minimalistic details such as copyright and further contact details via social media -->
             <div class="footer">
                 <div class="disclaimer-container">
                     <div class="student-disclaimer">
@@ -192,6 +215,7 @@
                 </div>
                 <div class="social-footer">
                     <div class="social-media">
+                        <!-- Images sourced from Freepik. n.d. “Social Media Icon Pack”. Website. Accessed on Apr 06, 2021. https://www.flaticon.com/packs/social-media-51 -->
                         <a href="#"><img class="social-link" src="./images/instagram.svg" alt="Instagram" /></a>
                         <a href="#"><img class="social-link" src="./images/facebook.svg" alt="Facebook" /></a>
                         <a href="#"><img class="social-link" src="./images/twitter.svg" alt="Twitter" /></a>
@@ -203,7 +227,9 @@
             </div>
         </div>
     </div>
+    <!-- JavaScript declarations for the main page behaviour and carousel -->
     <script src="main.js"></script>
+    <!-- Glide library sourced from https://glidejs.com/ on April 15, 2021. -->
     <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
     <script>
         const config = {

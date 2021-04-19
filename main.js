@@ -1,4 +1,7 @@
+// Sidebar menu actions
 const navSlide = () => {
+
+    // Variable declarations
     const burger = document.querySelector('.burger');
     const nav = document.querySelector('.nav-links');
     const navLinks = document.querySelectorAll('.nav-links li');
@@ -14,11 +17,18 @@ const navSlide = () => {
 
     // Cancel menu when clicking on a link
     nav.addEventListener('click', () => {
-        nav.classList.toggle('nav-active');
-        burger.classList.toggle('toggle');
-        
-        // Animate links
-        animateLinks(navLinks);
+
+        // If the burger menu is active i.e. mobile mode, reset it
+        // Otherwise ignore it.
+        // This is to allow the menu to not be removed via the
+        // nav-active class used in the mobile sized viewports
+        if (burger.classList.contains('toggle')) {
+            nav.classList.toggle('nav-active');
+            burger.classList.toggle('toggle');
+
+            // Animate links
+            animateLinks(navLinks);
+        }
     })
 
     // Set body to listen to click events to cancel menu
@@ -28,7 +38,6 @@ const navSlide = () => {
             nav.classList.toggle('nav-active');
             burger.classList.toggle('toggle');
             animateLinks(navLinks);
-            console.log("clicked")
         }
     })
 }
@@ -48,7 +57,7 @@ function animateLinks(navLinks) {
 
 /* When the user scrolls down, hide the navbar. When the user scrolls up, show the navbar */
 var prevScrollpos = window.pageYOffset;
-window.onscroll = function () {
+window.onscroll = function() {
     var currentScrollPos = window.pageYOffset;
     if (prevScrollpos > currentScrollPos) {
         document.querySelector('nav').style.top = "0";

@@ -25,13 +25,13 @@
         </div>
         <ul class="nav-links">
             <li><a href="#">Home</a></li>
-            <li><a href="#">About Us</a></li>
+            <li><a href="#about">About Us</a></li>
             <li class="expanded-logo">
                 <!--  -->
                 <a href="#"><img class="logo" src="./images/trigwell-logo-cropped.jpg" alt="Trigwell Architects" /></a>
             </li>
-            <li><a href="#">Gallery</a></li>
-            <li><a href="#">Contact Us</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#contact">Contact Us</a></li>
         </ul>
 
         <!-- Burger (collapsed) menu -->
@@ -58,25 +58,18 @@
             <div class="parallax" id="parallax1"></div>
 
             <!-- About Us section -->
-            <div class="about">
+            <div class="about" id="about">
                 <div class="sectionHeading">
                     <h1>About Us</h1>
                 </div>
                 <div class="sectionContainer">
                     <div class="leftSection">
-                        <p>Meet Harrison and Jeff Trigwell.</p>
-
-                        <p>
-                            The Brothers and business partners are both qualified and experienced architects, with the firm having worked on a number of major projects in the Fremantle area and surrounding suburbs. They have been operating for over 15 years as Trigwell architects
-                            and pride themselves in the level of quality product they have produced.
+                        <p>Harrison and Jeff Trigwell are brothers and business partners. They are both qualified and experienced architects, with the firm having worked on a number of major projects in the Fremantle area and surrounding suburbs. They have
+                            been operating for over 15 years as Trigwell Architects and pride themselves in the level of quality product they have produced.
                         </p>
 
                         <p>
-                            Their portfolio includes both residential and commercial projects. Most recently they designed the head office building for international shipping company Brighton & Swift Co.
-                        </p>
-
-                        <p>
-                            Trigwell architects specialise in high-end commercial and residential design.
+                            Their portfolio includes both residential and commercial projects. Most recently they designed the head office building for international shipping company Brighton & Swift Co. Trigwell architects specialise in high-end commercial and residential design.
                         </p>
                     </div>
                     <div class="rightSection">
@@ -88,42 +81,46 @@
             <div class="parallax" id="parallax2"></div>
 
             <!-- Gallery section -->
-            <div class="gallery-container">
+            <div class="gallery-container" id="gallery">
                 <div class="glide">
                     <div class="glide__track" data-glide-el="track">
                         <ul class="glide__slides">
-                            <li class="glide__slide">                
-                                <picture class="">
-                                <!--  -->
-                                <source srcset="/images/gallery-img-1-portrait.png" media="(max-width: 768px)" class="hero-image-sml" />
-                                <!--  -->
-                                <source srcset="/images/gallery-img-1-landscape.png" media="(min-width: 769px)" class="hero-image-lrg" />
-                                <!--  -->
-                                <img src="/images/hero_default.png" alt="House image" class="default-hero-img" />
-                            </picture></li>
-                            <li class="glide__slide">                
-                                <picture class="">
-                                <!--  -->
-                                <source srcset="/images/gallery-img-2-portrait.png" media="(max-width: 768px)" class="hero-image-sml" />
-                                <!--  -->
-                                <source srcset="/images/hero_large.png" media="(min-width: 769px)" class="hero-image-lrg" />
-                                <!--  -->
-                                <img src="/images/hero_default.png" alt="House image" class="default-hero-img" />
-                            </picture></li>
-                            <li class="glide__slide">                
-                                <picture class="">
-                                <!--  -->
-                                <source srcset="/images/gallery-img-3-portrait.png" media="(max-width: 768px)" class="hero-image-sml" />
-                                <!--  -->
-                                <source srcset="/images/hero_large.png" media="(min-width: 769px)" class="hero-image-lrg" />
-                                <!--  -->
-                                <img src="/images/hero_default.png" alt="House image" class="default-hero-img" />
-                            </picture></li>
+                            <li class="glide__slide">
+                                <picture class="gallery-images">
+                                    <!--  -->
+                                    <source srcset="/images/gallery-img-1-portrait.png" media="(max-width: 768px)" class="gallery-image-sml" />
+                                    <!--  -->
+                                    <source srcset="/images/gallery-img-1-landscape.png" media="(min-width: 769px)" class="gallery-image-lrg" />
+                                    <!--  -->
+                                    <img src="/images/hero_default.png" alt="House image" class="default-gallery-img" />
+                                </picture>
+                            </li>
+                            <li class="glide__slide">
+                                <picture class="gallery-images">
+                                    <!-- https://www.google.com/imgres?imgurl=https%3A%2F%2Fi.pinimg.com%2Foriginals%2F4c%2F3d%2F24%2F4c3d247abc644e898284f8d8070fa969.jpg&imgrefurl=https%3A%2F%2Fwww.pinterest.com%2Fpin%2F613334042980792592%2F&tbnid=J24ZadWqe4eRKM&vet=12ahUKEwi1oaq5h4LwAhVSVisKHceRD14QMygHegUIARDCAQ..i&docid=tkQGCmIM7l09HM&w=636&h=990&q=pinterest%20modern%20house%20exterior&client=firefox-b-d&ved=2ahUKEwi1oaq5h4LwAhVSVisKHceRD14QMygHegUIARDCAQ -->
+                                    <source srcset="/images/gallery-img-2-portrait.jpg" media="(max-width: 768px)" class="gallery-image-sml" />
+                                    <!-- Image from Expect Best 
+                                        https://www.pexels.com/photo/modern-building-against-sky-323780/ Accessed Apr 16, 2021 -->
+                                    <source srcset="/images/gallery-img-2-landscape.png" media="(min-width: 769px)" class="gallery-image-lrg" />
+                                    <!--  -->
+                                    <img src="/images/hero_default.png" alt="House image" class="default-gallery-img" />
+                                </picture>
+                            </li>
+                            <li class="glide__slide">
+                                <picture class="gallery-images">
+                                    <!-- https://www.google.com/imgres?imgurl=https%3A%2F%2Fi.pinimg.com%2Foriginals%2F4c%2F3d%2F24%2F4c3d247abc644e898284f8d8070fa969.jpg&imgrefurl=https%3A%2F%2Fwww.pinterest.com%2Fpin%2F613334042980792592%2F&tbnid=J24ZadWqe4eRKM&vet=12ahUKEwi1oaq5h4LwAhVSVisKHceRD14QMygHegUIARDCAQ..i&docid=tkQGCmIM7l09HM&w=636&h=990&q=pinterest%20modern%20house%20exterior&client=firefox-b-d&ved=2ahUKEwi1oaq5h4LwAhVSVisKHceRD14QMygHegUIARDCAQ -->
+                                    <source srcset="/images/gallery-img-3-portrait.jpg" media="(max-width: 768px)" class="gallery-image-sml" />
+                                    <!--  -->
+                                    <source srcset="/images/gallery-img-3-landscape.jpg" media="(min-width: 769px)" class="gallery-image-lrg" />
+                                    <!-- https://www.google.com/imgres?imgurl=http%3A%2F%2Fcdn.home-designing.com%2Fwp-content%2Fuploads%2F2017%2F05%2Fmodern-islamic-villa-home-exterior.jpg&imgrefurl=http%3A%2F%2Fwww.home-designing.com%2Fmodern-house-exterior-elevation-ideas-pictures-color-combinations&tbnid=dJXzcQFlCzGMsM&vet=10CCEQMyh4ahcKEwjgs_jDiYLwAhUAAAAAHQAAAAAQAg..i&docid=Yd2sMBeeNOTvlM&w=1200&h=900&q=pinterest%20modern%20house%20exterior&client=firefox-b-d&ved=0CCEQMyh4ahcKEwjgs_jDiYLwAhUAAAAAHQAAAAAQAg -->
+                                    <img src="/images/hero_default.png" alt="House image" class="default-gallery-img" />
+                                </picture>
+                            </li>
                         </ul>
                     </div>
                     <div class="glide__arrows" data-glide-el="controls">
-                        <button class="glide__arrow glide__arrow--left" data-glide-dir="<">prev</button>
-                        <button class="glide__arrow glide__arrow--right" data-glide-dir=">">next</button>
+                        <button class="glide__arrow glide__arrow--left" data-glide-dir="<"><</button>
+                        <button class="glide__arrow glide__arrow--right" data-glide-dir=">">></button>
                     </div>
                 </div>
             </div>
@@ -131,7 +128,7 @@
             <div class="parallax" id="parallax3"></div>
 
             <!-- Contact Us section -->
-            <div class="contact">
+            <div class="contact" id="contact">
                 <div class="sectionHeading">
                     <h1>Contact Us</h1>
                 </div>

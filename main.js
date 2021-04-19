@@ -10,8 +10,16 @@ const navSlide = () => {
 
         // Animate links
         animateLinks(navLinks);
-
     });
+
+    // Cancel menu when clicking on a link
+    nav.addEventListener('click', () => {
+        nav.classList.toggle('nav-active');
+        burger.classList.toggle('toggle');
+        
+        // Animate links
+        animateLinks(navLinks);
+    })
 
     // Set body to listen to click events to cancel menu
     body = document.querySelector('.content-body');
@@ -40,7 +48,7 @@ function animateLinks(navLinks) {
 
 /* When the user scrolls down, hide the navbar. When the user scrolls up, show the navbar */
 var prevScrollpos = window.pageYOffset;
-window.onscroll = function() {
+window.onscroll = function () {
     var currentScrollPos = window.pageYOffset;
     if (prevScrollpos > currentScrollPos) {
         document.querySelector('nav').style.top = "0";
